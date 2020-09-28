@@ -21,14 +21,16 @@ $(document).ready(function() {
         paginationSizeSelector:[5,10,15,20,25,30,40,50],
         columnMinWidth:80,
         columns:[
-            {title:"#Oficio", field:"num_doc", width:140,align:"center",headerFilter:"input"},
-            {title:"Remitente", field:"remitente", width:180,align:"center",headerFilter:"input"},
-            {title:"Destinatario", field:"destinatario", width:180,align:"center",headerFilter:"input"},
-            {title:"Asunto", field:"asunto", width:230,align:"center",headerFilter:"input"},
-            
-            {title:"Fecha Emision", field:"fecha_emision", width:130,align:"center",headerFilter:"input"},
-            {title:"Fecha limite", field:"fecha_limite",width:100,align:"center",headerFilter:"input"},
-            {title:"Estatus", field:"estatus",width:100,align:"center",headerFilter:"input"},
+            {title:"#Incidente", field:"id", width:140,align:"center",headerFilter:"input"},
+            {title:"Fecha", field:"fecha_reporte", width:180,align:"center",headerFilter:"input"},
+            {title:"cve_ent", field:"cve_ent", width:180,align:"center",headerFilter:"input"},
+            {title:"nombre_ent", field:"nombre_ent", width:230,align:"center",headerFilter:"input"},
+            {title:"altitud", field:"altitud", width:130,align:"center",headerFilter:"input"},
+            {title:"Latitud", field:"latitud",width:100,align:"center",headerFilter:"input"},
+            {title:"cve_municipio", field:"cve_municipio",width:100,align:"center",headerFilter:"input"},
+            {title:"nombre_municipio", field:"nombre_municipio",width:100,align:"center",headerFilter:"input"},
+            {title:"cve_localidad", field:"cve_localidad",width:100,align:"center",headerFilter:"input"},
+            {title:"nombre_localidad", field:"nombre_localidad",width:100,align:"center",headerFilter:"input"},
             {title:"Acciones", formatter:icons, align:"center",width:200}
         ],
         

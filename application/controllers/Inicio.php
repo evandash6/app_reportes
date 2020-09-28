@@ -16,7 +16,7 @@ class Inicio extends CI_Controller {
 		$this->api = new RestClient([
 			'base_url' => 'http://10.254.250.17/API_REST/api',
 			'headers' => [
-				'Ephylone'=>'doc',
+				'Ephylone'=>'app',
 				'Autorizacion' => $this->session->token],
 			'format' => "json"
 		]);
@@ -73,38 +73,9 @@ class Inicio extends CI_Controller {
 
 	private function principal(){		
 		$data = $this->basicas();
-		//$data['tabla'] = 'dbo.documentos';
-		$data['consulta'] = "SELECT
-								DOC.id,
-								DOC.num_doc,
-								SEG.remitente,
-								SEG.destinatario,
-								DOC.asunto,
-								DOC.fecha_limite,
-								DOC.fecha_emision,
-								SEG.estatus_r as estatus
-							FROM
-								dbo.documentos DOC
-							LEFT JOIN vw_seguimiento SEG ON SEG.id_seguimiento = DOC.id 
-							WHERE SEG.remitente in ('".$this->session->email."')
-							
-							UNION ALL
-							SELECT
-							DOC.id,
-							DOC.num_doc,
-								SEG.remitente,
-								SEG.destinatario,
-								DOC.asunto,
-								DOC.fecha_limite,
-								DOC.fecha_emision,
-								SEG.estatus_d as estatus
-							FROM
-								dbo.documentos DOC
-							LEFT JOIN vw_seguimiento SEG ON SEG.id_seguimiento = DOC.id 
-							WHERE SEG.destinatario in ('".$this->session->email."')";
-							
+		$data['consulta'] = "SELECT * From incidentes";							
 		$data['datos'] = json_encode(json_decode($this->api->post('/ejecuta',$data)->response)->data);
-		
+		//var_dump($data['datos']);
 		$this->load->view('inicio/inicio',$data);
 		$this->load->view('footer');
 		$this->load->view('funciones');
