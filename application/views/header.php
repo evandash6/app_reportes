@@ -55,10 +55,10 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>SAS - DOC</title>
+	<title>APP - Reportes</title>
 	<link rel="icon" type="image/png" href="<?=base_url()?>frontend/images/favicon.png">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-	<meta content="Jose Manuel, Misael Aguilar,Mauricio Ramirez" name="author" />
+	<meta content="Jose Manuel, Misael Aguilar" name="author" />
 	<meta content="Control de oficios y atentas notas" name="description" />
 	<!-- ================== BEGIN BASE CSS STYLE ================== -->
 	<link rel="stylesheet" href="<?=base_url()?>frontend/css/jquery-ui.min.css">

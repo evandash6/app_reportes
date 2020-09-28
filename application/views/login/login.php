@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
     	<meta charset="utf-8" />
-    	<title>SAS - DOC</title>
+    	<title>SNIMAF-REPORTES</title>
     	<link rel="icon" type="image/png" href="<?=base_url()?>frontend/images/favicon.png">
     	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
     	<meta content="Jose Manuel, Misael Aguilar,Mauricio Ramirez" name="author" />
@@ -27,7 +27,7 @@
                                         <div class="col-md-12">
                                             <div class="page-logo width-mobile-auto m-0 align-items-center justify-content-center p-0 bg-transparent bg-img-none shadow-0 height-9">
                                                 <img style="width:50px" src="<?=base_url()?>frontend/images/favicon.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
-                                                <span class="page-logo-text mr-1"><h1>SAS-DOC</h1></span>
+                                                <span class="page-logo-text mr-1"><h1>Reportes- SNIMAF</h1></span>
                                             </div>
                                         </div>
                                     </div>
@@ -35,9 +35,9 @@
                                         <div class="col-md-12">
                                             <div class="col hidden-sm-down">
                                                 <h3 class="fs-xxl fw-500 mt-4 text-white">
-                                                    Sistema de Administración y Seguimiento de Documentos
+                                                 App para la integracion con reportes de SANIDAD, Incendios y Cuerpos de Agua
                                                     <small class="h3 fw-300 mt-3 mb-5 text-white opacity-60">
-                                                        Nuevo sistema mejorado para la administración documental de la Comisión Nacional Forestal.
+                                                        SNIMAF
                                                     </small>
                                                 </h3>
                                             </div>

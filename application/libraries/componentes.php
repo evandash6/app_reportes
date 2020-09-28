@@ -17,7 +17,7 @@ class Componentes {
 		$perfiles_m = '';
 
 
-		switch (true) {
+	/* 	switch (true) {
 			case strpos($url, 'nuevo_documento') !== false:
 				$documentos_m = 'active';
 				$documentos_m_nuevo = 'active';
@@ -57,7 +57,7 @@ class Componentes {
 				$inicio_m = 'active';
 			break;
 		}
-
+ */
 		$cuerpo = '<ul id="js-nav-menu" class="nav-menu">
 		<li>
 			<li class="'.$inicio_m.'">
@@ -66,34 +66,7 @@ class Componentes {
 					<span class="nav-link-text">Inicio</span>
 				</a>
 			</li>
-			<li class="open '.$documentos_m.'">
-				<a href="#" title="Nuevo Documento" >
-					<i class="fal fa-file"></i>
-					<span class="nav-link-text" >Documentos</span>
-				</a>
-				<ul>
-					<li class="'.$documentos_m_nuevo.'">
-                        <a href="'.base_url().'inicio/nuevo_documento" title="Crear Nuevo Documento">
-							<span class="nav-link-text">Nuevo Documento</span>
-						</a>
-					</li>
-				</ul>
-            </li>
-             <li class="nav-title">Herramientas</li>
-			 <li class="'.$bitacora_m.'">
-			 	    <a href="'.base_url().'inicio/bitacora"  title="Bitacora">
-                        <i class="fal fa-history"></i>
-			 		    <span class="nav-link-text">Bitacora de eventos</span>
-			 	    </a>
-             </li>
-			 <li class="'.$reportes_m.'">
-			 	<a href="'.base_url().'inicio/reportes" title="Reportes">
-                    <i class="fal fa-table"></i>
-			 		<span class="nav-link-text" data-i18n="nav.tables">Reportes</span>
-                 </a>
-             </li>
-             
-		</li>					   
+						   
 	</ul>';
 	//PERFILES DE USUARIO
 	/* <li class="'.$perfiles_m.'">

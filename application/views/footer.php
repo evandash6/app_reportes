@@ -4,7 +4,7 @@
 <!-- BEGIN Page Footer -->
     <footer class="page-footer" role="contentinfo">
         <div class="d-flex align-items-center flex-1 text-muted">
-            <span class="hidden-md-down fw-700">2020 © SAS-DOC</span>
+            <span class="hidden-md-down fw-700">2020 © APP_REPORTES</span>
         </div>
         <div class="d-flex align-items-center flex-1 text-muted">
             <span class="hidden-md-down fw-700">Versión: 2020.1.0</span>

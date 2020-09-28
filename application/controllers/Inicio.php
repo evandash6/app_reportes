@@ -289,9 +289,9 @@ class Inicio extends CI_Controller {
 				$data['id_seguimiento'] = $id_insertado;
 				$res2 = $this->api->post('/insertar',array('datos'=>$data,'tabla'=>'seguimiento'));
 				if($res2['ban']){
-					$this->api->post('/mail',array('mensaje'=>'Haz recibido una notificación, ingresa a : http://187.218.230.37/sasdoc/login/ Para atenderla. '
+					$this->api->post('/mail',array('mensaje'=>'Haz recibido una notificación, ingresa a : http://187.218.230.37/app_reportes/login/ Para atenderla. '
 						."<br />".'Fecha Límite: '.$_POST['fecha_limite'].'<br/>'.'Número de Oficio: '.$_POST['num_doc'].'<br />'.'Asunto : '.$_POST['asunto'].'<br />'.' Remitente: '.$_POST['remitente'],
-						'email_destino'=>$_POST['destinatario'], 'asunto'=>'Notificación de SAS-DOC'));
+						'email_destino'=>$_POST['destinatario'], 'asunto'=>'Notificación de REPORTES'));
 					header('Location: '.base_url().'inicio/');
 					//$this->principal();
 				}
