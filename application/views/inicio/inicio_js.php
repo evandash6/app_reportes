@@ -5,9 +5,9 @@ $(document).ready(function() {
 
     //crear tabla
     var icons = function(cell, formatterParams){
-        return "<div class='btx_ver btn btn-light btn-sm'  href='inicio/ver' ide='"+cell.getRow().getData().id+"' id='ver' title='Ver'><i class='fa fa-eye'></i></div> \
-                <div class='btx_atendido btn btn-success btn-sm' ide='"+cell.getRow().getData().id+"' id='atendido' title='Atendido'><i class='fas fa-check'></i></div>\
-                <div class='btx_turnar btn btn-dark btn-sm' ide='"+cell.getRow().getData().id+"' id='turnar' title='Turnar'><i class='fas fa-exchange'></i></div>";
+        return "<div class='btx_ver btn btn-light btn-sm'  href='inicio/ver' ide='"+cell.getRow().getData().id+"' id='ver' title='Ver'><i class='fa fa-eye'></i></div>"; 
+                //<div class='btx_atendido btn btn-success btn-sm' ide='"+cell.getRow().getData().id+"' id='atendido' title='Atendido'><i class='fas fa-check'></i></div>\
+                //<div class='btx_turnar btn btn-dark btn-sm' ide='"+cell.getRow().getData().id+"' id='turnar' title='Turnar'><i class='fas fa-exchange'></i></div>;
                 //<div class='btx_contestar btn btn-secondary btn-sm' href='inicio/contestar' ide='"+cell.getRow().getData().id+"' id='contestar' title='Contestar'><i class='fas fa-share'></i></div> 
                 //<div class=' btx_editar btn btn-secondary btn-sm' href='inicio/editar' ide='"+cell.getRow().getData().id+"' id='editar' title='Editar'><i class='fas fa-edit'></i></div> 
                 // <div class='btx_eliminar btn btn-danger btn-sm text-white' ide='"+cell.getRow().getData().id+"' id='eliminar' title='Eliminar'><i class='fas fa-trash'></i></div>";
@@ -21,12 +21,12 @@ $(document).ready(function() {
         paginationSizeSelector:[5,10,15,20,25,30,40,50],
         columnMinWidth:80,
         columns:[
-            {title:"#Incidente", field:"id", width:140,align:"center",headerFilter:"input"},
-            {title:"Fecha", field:"fecha_reporte", width:180,align:"center",headerFilter:"input"},
-            {title:"cve_ent", field:"cve_ent", width:180,align:"center",headerFilter:"input"},
-            {title:"nombre_ent", field:"nombre_ent", width:230,align:"center",headerFilter:"input"},
-            {title:"altitud", field:"altitud", width:130,align:"center",headerFilter:"input"},
-            {title:"Latitud", field:"latitud",width:100,align:"center",headerFilter:"input"},
+            {title:"#Incidente", field:"id", width:80,align:"center",headerFilter:"input"},
+            {title:"Fecha", field:"fecha_reporte", width:100,align:"center",headerFilter:"input"},
+            {title:"cve_ent", field:"cve_ent", width:80,align:"center",headerFilter:"input"},
+            {title:"nombre_ent", field:"nombre_ent", width:100,align:"center",headerFilter:"input"},
+            {title:"altitud", field:"altitud", width:80,align:"center",headerFilter:"input"},
+            {title:"Latitud", field:"latitud",width:80,align:"center",headerFilter:"input"},
             {title:"cve_municipio", field:"cve_municipio",width:100,align:"center",headerFilter:"input"},
             {title:"nombre_municipio", field:"nombre_municipio",width:100,align:"center",headerFilter:"input"},
             {title:"cve_localidad", field:"cve_localidad",width:100,align:"center",headerFilter:"input"},

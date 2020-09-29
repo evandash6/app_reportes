@@ -114,7 +114,7 @@
                 <div class="page-logo">
                     <a class="d-flex" >
                         <img src="<?=base_url()?>frontend/images/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
-                        <span class="page-logo-text mr-1">SAS-DOC</span>
+                        <span class="page-logo-text mr-1">REPORTES</span>
                     </a>
                 </div>
                 <!-- BEGIN PRIMARY NAVIGATION -->

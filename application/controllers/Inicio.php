@@ -94,7 +94,7 @@ class Inicio extends CI_Controller {
 		//var_dump($data['oficio']);
 		//$data['tipos_documento'] = $this->crea_select($resultado);
 		$data = $this->basicas();
-		$data['tabla'] = 'dbo.vw_documentos';
+		$data['tabla'] = 'incidentes';
 		$data['condicion'] = array('id'=>$id);
 		$data['oficio'] = json_encode(json_decode($this->api->post('consulta_unica', $data)->response)->data);
 		//var_dump($data['oficio']);
