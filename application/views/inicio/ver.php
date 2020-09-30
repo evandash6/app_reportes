@@ -15,17 +15,35 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <label class="form-label" for="num_inc">Numero de Incidencia</label>
                         <input type="text" class="form-control"  readonly name="id" >
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <label class="form-label" for="cve_ent">Clave Ent</label>
                         <input type="text" class="form-control" readonly name="cve_ent" maxlength="10">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <label class="form-label" for="nombre_ent">Nombre Ent</label>
                         <input type="text" class="form-control" readonly name="nombre_ent">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="tipo_reporte">Tipo de Reporte</label>
+                        <input type="text" class="form-control" readonly name="tipo_reporte">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label class="form-label" for="quienreporta">Nombre de quien Reporta</label>
+                        <input type="text" class="form-control"  readonly name="nombre_quien_reporta" >
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="cve_ent">Número telefonico</label>
+                        <input type="text" class="form-control" readonly name="num_tel" maxlength="10">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="nombre_ent">Color del humo</label>
+                        <input type="text" class="form-control" readonly name="color_humo">
                     </div>
                 </div>
                 <div class="row m-t-10">

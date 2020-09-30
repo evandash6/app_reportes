@@ -30,8 +30,11 @@ $(document).ready(function() {
             {title:"cve_municipio", field:"cve_municipio",width:100,align:"center",headerFilter:"input"},
             {title:"nombre_municipio", field:"nombre_municipio",width:100,align:"center",headerFilter:"input"},
             {title:"cve_localidad", field:"cve_localidad",width:100,align:"center",headerFilter:"input"},
-            {title:"nombre_localidad", field:"nombre_localidad",width:100,align:"center",headerFilter:"input"},
-            {title:"Acciones", formatter:icons, align:"center",width:200}
+            {title:"tipo_reporte", field:"tipo_reporte",width:100,align:"center",headerFilter:"input"},
+            {title:"nombre_quien_reporta", field:"nombre_quien_reporta",width:100,align:"center",headerFilter:"input"},
+            {title:"color_humo", field:"color_humo",width:100,align:"center",headerFilter:"input"},
+            {title:"num_tel", field:"num_tel",width:100,align:"center",headerFilter:"input"},
+            //{title:"Acciones", formatter:icons, align:"center",width:200}
         ],
         
     });
